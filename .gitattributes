@@ -3,6 +3,6 @@
 *.sh mode=0755
 
 #shell文件权限差异化问题解决1
-#chmod +x script.sh
-#git update-index --chmod=+x script.sh
+#chmod +x *.sh
+#git update-index --chmod=+x *.sh
 #git commit -m "Add executable permission to script.sh"
