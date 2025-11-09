@@ -15,5 +15,17 @@
         "url": "https://gitee.com/gpg-dev/cloud-server.git"
       }
     ]
+  },
+  {
+    "name": "nas",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/nas/nas.git",
+    "sync-list": [
+      {
+        "name": "nas",
+        "type": "github",
+        "url": "https://github.com/2694484453/nas.git"
+      }
+    ]
   }
 ]
