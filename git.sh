@@ -29,6 +29,7 @@ jq -c '.[]' "$CONFIG_FILE" | while read -r repo; do
          echo "克隆仓库：$url to $name"
          git clone $url
          ls -l -a
+         cd ..
     else
         cd $name
         git pull origin main
