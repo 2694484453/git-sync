@@ -28,12 +28,10 @@ jq -c '.[]' "$CONFIG_FILE" | while read -r repo; do
     if [ ! -d "$name" ]; then
          echo "克隆仓库：$url to $name"
          git clone $url
-         ls -l -a
-         cd ..
+         cd $name
     else
         cd $name
         git pull origin main
-        cd ..
     fi
     echo $sync_list
     # 遍历每个同步目标仓库信息
@@ -43,9 +41,7 @@ jq -c '.[]' "$CONFIG_FILE" | while read -r repo; do
         sync_url=$(echo $sync_target | jq -r '.url')
         echo "推送仓库：$name to $sync_url"
         # 添加或更新远程仓库
-        cd $name
         git remote add $sync_type $sync_url
-
         # 推送到同步目标仓库
         git push $sync_type
     done
