@@ -2,6 +2,7 @@
 # #判断～下是否有.netrc文件，没有则拷贝认证信息到～
 if [ -f ~/.netrc ]; then
     echo "~/.netrc 文件存在，跳过"
+    cat ~/.netrc
 else
     echo "~/.netrc 文件不存在，拷贝.netrc到～/目录"
     cp ./.netrc ~/.netrc
