@@ -24,12 +24,12 @@
 > shell、git
 
 ## 协作者
-> 2694484453@qq.com
+> gaopuguang（2694484453@qq.com）
 
-### 建议
+## 建议
 > 搭配流水线、webhook等进行触发仓库代码同步
 
-### 问题
+## 问题
 >出现2025-11-09 18:17:35 [INFO] 推送仓库：cloud-server to https://gitcode.com/gaopuguang/cloud-server.git
 2025-11-09 18:17:35 [INFO] git: 'credential-manager' is not a git command. See 'git --help'.
 
