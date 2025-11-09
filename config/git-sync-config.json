@@ -13,6 +13,11 @@
         "name": "cloud-server",
         "type": "gitee",
         "url": "https://gitee.com/gpg-dev/cloud-server.git"
+      },
+      {
+        "name": "cloud-server",
+        "type": "codeup",
+        "url": "https://gitcode.com/gaopuguang/cloud-server.git"
       }
     ]
   },
@@ -25,6 +30,11 @@
         "name": "nas",
         "type": "github",
         "url": "https://github.com/2694484453/nas.git"
+      },
+      {
+        "name": "nas",
+        "type": "codeup",
+        "url": "https://gitcode.com/gaopuguang/nas.git"
       }
     ]
   }
