@@ -1,6 +1,11 @@
 #!/bin/bash
-# 认证信息写入到～
-cp ./.netrc ~/.netrc
+# #判断～下是否有.netrc文件，没有则拷贝认证信息到～
+if [ -f ~/.netrc ]; then
+    echo "~/.netrc 文件存在"
+else
+    echo "~/.netrc 文件不存在，拷贝.netrc到～/目录"
+    cp ./.netrc ~/.netrc
+fi
 
 # 检查是否存在jq工具，用于解析JSON
 if ! command -v jq &> /dev/null; then
