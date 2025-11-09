@@ -1,6 +1,6 @@
 #!/bin/bash
 # #判断～下是否有.git-credentials文件，没有则拷贝认证信息到～
-if [ -f ~/.git-credentials]; then
+if [ -f ~/.git-credentials ]; then
     echo "~/.git-credentials 文件存在，跳过"
     cat ~/.git-credentials
 else
