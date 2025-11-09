@@ -1,11 +1,11 @@
 #!/bin/bash
-# #判断～下是否有.netrc文件，没有则拷贝认证信息到～
-if [ -f ~/.netrc ]; then
-    echo "~/.netrc 文件存在，跳过"
-    cat ~/.netrc
+# #判断～下是否有.git-credentials文件，没有则拷贝认证信息到～
+if [ -f ~/.git-credentials]; then
+    echo "~/.git-credentials 文件存在，跳过"
+    cat ~/.git-credentials
 else
-    echo "~/.netrc 文件不存在，拷贝.netrc到～/目录"
-    cp ./.netrc ~/.netrc
+    echo "~/.git-credentials 文件不存在，拷贝.git-credentials到～/目录"
+    cp ./.git-credentials ~/.git-credentials
 fi
 
 # 检查是否存在jq工具，用于解析JSON
