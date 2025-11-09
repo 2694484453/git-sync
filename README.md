@@ -1,5 +1,5 @@
 ## 项目名称
-> 同步你的目标git仓库到多个不同的仓库中例如：codeup->github\gitlab\gitee
+> 同步你的目标git仓库到多个不同的仓库中例如：codeup->github\gitlab\gitee等
 
 ## 版本更新说明
 
