@@ -32,7 +32,7 @@ jq -c '.[]' "$CONFIG_FILE" | while read -r repo; do
          cd $name
     else
         cd $name
-        git pull origin main
+        git pull origin master
     fi
     echo $sync_list
     # 遍历每个同步目标仓库信息
