@@ -65,4 +65,4 @@ error: File xxx is 119.22 MB; this exceeds GitHub's file size limit of 100.00 MB
 2025-11-10 18:19:34 [INFO] hint: (e.g., 'git pull ...') before pushing again.
 2025-11-10 18:19:34 [INFO] hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
-解决方案：目标仓库和推送仓库代码不一致需要本地排除差异保持版本一致
+解决方案：目标仓库和推送仓库代码不一致需要本地排除差异保持版本一致后再次执行推送
