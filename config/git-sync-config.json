@@ -22,6 +22,30 @@
     ]
   },
   {
+    "name": "cloud-web",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/cloud-platform/cloud-web.git",
+    "sync-list": [
+      {
+        "name": "cloud-web",
+        "type": "github",
+        "url": "https://github.com/2694484453/cloud-web.git"
+      }
+    ]
+  },
+  {
+    "name": "git-sync",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/git-sync.git",
+    "sync-list": [
+      {
+        "name": "git-sync",
+        "type": "github",
+        "url": "https://github.com/2694484453/git-sync.git"
+      }
+    ]
+  },
+  {
     "name": "nas",
     "type": "codeup",
     "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/nas/nas.git",
@@ -35,6 +59,30 @@
         "name": "nas",
         "type": "codeup",
         "url": "https://gitcode.com/gaopuguang/nas.git"
+      }
+    ]
+  },
+  {
+    "name": "docker-image-sync",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/docker/docker-compose.git",
+    "sync-list": [
+      {
+        "name": "docker-image-sync",
+        "type": "github",
+        "url": "https://github.com/2694484453/docker-image-sysnc.git"
+      }
+    ]
+  },
+  {
+    "name": "prometheus",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/prometheus/prometheus.git",
+    "sync-list": [
+      {
+        "name": "prometheus",
+        "type": "github",
+        "url": "https://github.com/2694484453/prometheus.git"
       }
     ]
   }
