@@ -44,7 +44,7 @@ error: File xxx is 119.22 MB; this exceeds GitHub's file size limit of 100.00 MB
 
 执行
 ```
-方法一：全局配置 git config --global http.postBuffer 524288000 <br/>
-或者 <br/>
-方法二：当前仓库配置 git config http.postBuffer 524288000 <br/> 
+方法一：全局配置 git config --global http.postBuffer 524288000 
+或者 
+方法二：当前仓库配置 git config http.postBuffer 524288000
 ```
