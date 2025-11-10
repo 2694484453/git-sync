@@ -30,7 +30,21 @@
 > 搭配流水线、webhook等进行触发仓库代码同步
 
 ## 问题
->出现2025-11-09 18:17:35 [INFO] 推送仓库：cloud-server to https://gitcode.com/gaopuguang/cloud-server.git
+>1.出现credential-manager问题
+
+2025-11-09 18:17:35 [INFO] 推送仓库：cloud-server to https://gitcode.com/gaopuguang/cloud-server.git
 2025-11-09 18:17:35 [INFO] git: 'credential-manager' is not a git command. See 'git --help'.
 
 执行```git config --global credential.helper store```
+
+>2.github提示文件超过100MB 
+
+error: File xxx is 119.22 MB; this exceeds GitHub's file size limit of 100.00 MB        
+2025-11-10 18:04:17 [INFO] remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.      
+
+执行
+```
+方法一：全局配置 git config --global http.postBuffer 524288000 <br/>
+或者 <br/>
+方法二：当前仓库配置 git config http.postBuffer 524288000 <br/> 
+```
