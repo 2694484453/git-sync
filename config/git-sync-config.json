@@ -65,7 +65,7 @@
   {
     "name": "docker-image-sync",
     "type": "codeup",
-    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/docker/docker-compose.git",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/docker/docker-image-sync.git",
     "sync-list": [
       {
         "name": "docker-image-sync",
