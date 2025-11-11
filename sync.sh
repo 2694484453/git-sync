@@ -1,16 +1,16 @@
 #!/bin/bash
 # #判断～下是否有.git-credentials文件，没有则拷贝认证信息到～
 if [ -f ~/.git-credentials ]; then
-    echo "~/.git-credentials 文件存在，跳过"
+    echo "####### ~/.git-credentials 文件存在，跳过#######"
     cat ~/.git-credentials
 else
-    echo "~/.git-credentials 文件不存在，拷贝.git-credentials到～/目录"
+    echo "####### ~/.git-credentials 文件不存在，拷贝.git-credentials到～/目录#######"
     cp ./.git-credentials ~/.git-credentials
 fi
 
 # 检查是否存在jq工具，用于解析JSON
 if ! command -v jq &> /dev/null; then
-    echo "jq could not be found, please install it."
+    echo "ERROR:jq could not be found, please install it."
     exit 1
 fi
 
@@ -27,10 +27,12 @@ jq -c '.[]' "$CONFIG_FILE" | while read -r repo; do
 
     # 如果目录不存在，则克隆主仓库；否则拉取最新代码
     if [ ! -d "$name" ]; then
-         echo "克隆仓库：$url to $name"
+         echo "#######目录仓库 $name 不存在，开始克隆仓库：$url to $name #######"
          git clone $url
+         echo "完成克隆仓库：$url to $name"
          cd $name
     else
+        echo "#######目录仓库 $name 已存存在，开始更新目录仓库 #######"
         cd $name
         git pull origin master
     fi
@@ -40,11 +42,12 @@ jq -c '.[]' "$CONFIG_FILE" | while read -r repo; do
         sync_name=$(echo $sync_target | jq -r '.name')
         sync_type=$(echo $sync_target | jq -r '.type')
         sync_url=$(echo $sync_target | jq -r '.url')
-        echo "推送仓库：$name to $sync_url"
+        echo "#######开始推送仓库：$name to $sync_url #######"
         # 添加或更新远程仓库
         git remote add $sync_type $sync_url
         # 推送到同步目标仓库
         git push $sync_type
+        echo "#######完成推送仓库：$name to $sync_url #######"
     done
 done
 
