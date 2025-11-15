@@ -85,5 +85,22 @@
         "url": "https://github.com/2694484453/prometheus.git"
       }
     ]
+  },
+  {
+    "name": "helm-repo",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/kubernetes/helm-repo.git",
+    "sync-list": [
+      {
+        "name": "helm-repo",
+        "type": "gitee",
+        "url": "https://gitee.com/gpg-dev/helm-repo.git"
+      },
+      {
+        "name": "prometheus",
+        "type": "github",
+        "url": "https://github.com/2694484453/helm-repo.git"
+      }
+    ]
   }
 ]
