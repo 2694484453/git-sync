@@ -48,7 +48,7 @@
   {
     "name": "nas",
     "type": "codeup",
-    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/nas/nas.git",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/nas.git",
     "sync-list": [
       {
         "name": "nas",
@@ -77,7 +77,7 @@
   {
     "name": "prometheus",
     "type": "codeup",
-    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/prometheus/prometheus.git",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/prometheus.git",
     "sync-list": [
       {
         "name": "prometheus",
