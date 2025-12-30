@@ -102,5 +102,17 @@
         "url": "https://github.com/2694484453/helm-repo.git"
       }
     ]
+  },
+  {
+    "name": "mkdocs",
+    "type": "codeup",
+    "url": "https://codeup.aliyun.com/63b19ef08de0fe7a6554f8c1/mkdocs.git",
+    "sync-list": [
+      {
+        "name": "mkdocs",
+        "type": "github",
+        "url": "https://github.com/2694484453/mkdocs.git"
+      }
+    ]
   }
 ]
