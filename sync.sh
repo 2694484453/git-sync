@@ -15,7 +15,7 @@ if ! command -v jq &> /dev/null; then
 fi
 
 # 定义JSON配置文件路径
-CONFIG_FILE="./config/git-sync-config.json"
+CONFIG_FILE="./config.json"
 # 清除现有的git凭证缓存（可选）
 git credential-cache exit
 # 读取JSON配置文件中的仓库信息
